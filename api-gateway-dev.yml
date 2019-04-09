@@ -1,0 +1,13 @@
+#下面自己测试路由
+zuul:
+  routes:
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders:
+#  ignored-patterns:
+#    - /eureka/product/list
+#    - /myProduct/product/list
+management:
+  security:
+    enabled: false
